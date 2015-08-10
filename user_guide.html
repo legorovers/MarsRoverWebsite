@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mars Rover User Guide</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="events.js" type="text/jscript"></script>
+    </head>
+    <body>
+        <div id="mainpage">
+            <div id="title">
+                <img id="imguol" src="images/uol.png"/>
+                <img src="images/autonomous.png"/>
+            </div>  
+            <div id="roverBg">
+                <img id="imglogo" src="images/logo.png"/>
+                Lego Mars Rover
+            </div>
+        </div>
+        
+        <div id="tguide" class="contentDiv">
+                <div class="contentTitle">
+                    Using the Mars Rover Tablet App
+                </div>
+                <div class="guideSection">
+                    <p class="guideTitle">1. Connecting</p>
+                    <p>To connect the android device to the EV3 Robot is a two step process. First you need to pair the android device to the robot, then secondly connecting the Mars Rover app to the EV3 Robot.</p>
+                    <p>Please ensure that WiFi and Mobile Data is switched off.</p>
+                    <dl>
+                        <dt class="guideSubTitle">1.1 Bluetooth Pairing</dt>
+                            <dd>Turn on the EV3 Robot by pressing the center dark grey button. 
+                                <br/>
+                                <img class="guideImg" src="imgTabGuide/graybtn.JPG"/>
+                            </dd>
+                            <dd>Wait for the EV3 Robot to finish starting up, the robot will make a noise when it is finished. (This may take a few moments)</dd>
+                            <dd>On your Android device go to the settings app.</dd>
+                            <dd>Turn on the bluetooth.</dd>
+                            <dd>Touch the name of the robot when it appears, and wait for it to finishing pairing.</dd>
+                            <dd>Touch the gear icon next to the robot name.</dd>
+                            <dd>Touch the internet access box so that it is ticked.</dd>
+                            <dd>The Android Device and the EV3 Robot are now paired.</dd>
+                        <br/>
+                        <dt class="guideSubTitle"> 1.2 Connecting from the Mars Rover App</dt>
+                            <dd>Ensure that the Android device is paired and that WiFi and Mobile Data are switched off.</dd>
+                            <dd>Start the Mars Rover App.</dd>
+                            <dd>Ensure that robot address is correct by looking on the EV3 Display for a number in this format 10.0.1.1.</dd>
+                            <dd>Press the connect button, connection messages are shown below. When connected it will display connected in the messages below.</dd>
+
+                    </dl>
+                </div>
+                <br/>
+                
+                <div class="guideSection">
+                    <p class="guideTitle">2. Navigation</p>
+                    This page is to allow manual control of the EV3 Robot, you can also set the robot speed and the delay of the navigation buttons
+                    <dl>
+                        <dt class="guideSubTitle">2.1 Time Delay</dt>
+                        <dd>This is the amount of time it takes for the robot to receive the command from the navigation button pressed.<br/> There are four settings that can be chosen:<br/><br/>
+                            <dl>
+                                <dt>1. Instant</dt>
+                                    <dd>This is the setting for no delay to take place</dd>
+                                <dt>2. Satellite Phone Call to Austrilia (500ms)</dt>
+                                    <dd>This sets the delay to 500 milliseconds, which is about the same as the delay in a satellite phone call to Austrilia from the UK.</dd>
+                                <dt>3. Radio Signal to the Moon (1.3secs)</dt>
+                                    <dd>This sets the delay to 1.3 seconds, which is how long it takes a radio signal to get to the moon from earth.</dd>
+                                <dt>4. Signal To Mars (3min)</dt>
+                                    <dd>This sets the delay to 3 minutes, which is the minimum amount of time it takes for a signal to reach the actual Mars Rover.</dd>
+                            </dl>
+                        </dd>
+                        <br/>
+                        <dt class="guideSubTitle">2.2 Robot Speed</dt>
+                            <dd>This sets the speed of the robot for when it moves, the speed affects both the navigation buttons and the task demonstrations.<br/> There are five speeds to choose from: <br/><br/>
+                            <dl>
+                                <dt>1. Slow</dt>
+                                <dt>2. Normal</dt>
+                                <dt>3. Fast</dt>
+                                <dt>4. Faster</dt>
+                                <dt>5. Fastest</dt>
+                            </dl>
+                        </dd>
+                        <br/>
+                        
+                        <dt class="guideSubTitle">2.3 Navigation Buttons</dt>    
+                        <dd>There are a number of buttons that enable you to move the robot around. These include:
+                            <dl>
+                                <dt>Double Up Arrow</dt>
+                                    <dd>The robot will move forward until stop is pressed.</dd>
+                                <dt>Up Arrow</dt>
+                                    <dd>The robot will move forward slightly.</dd>
+                                <dt>Double Left Arrow</dt>
+                                    <dd>The robot will turn left until stop is pressed.</dd>
+                                <dt>Left Arrow</dt>
+                                    <dd>The robot will turn about 90° to the left.</dd>
+                                <dt>Stop</dt>
+                                    <dd>Stops the robot moving</dd>
+
+                                <dt>Right Arrow</dt>
+                                    <dd>The robot will turn about 90° to the right.</dd>
+                                <dt>Double Right Arrow</dt>
+                                    <dd>The robot will turn right until the stop button is pressed.</dd>
+                                <dt>Down Arrow</dt>
+                                    <dd>The robot will reverse slightly</dd>
+                                <dt>Double Down Arrow</dt>
+                                    <dd>The robot will reverse until the stop button is pressed.</dd>
+                            </dl>
+                        </dd>
+                    </dl>
+                </div>
+                <br/>
+                
+                <div class="guideSection">
+                    <p class="guideTitle">3. Rules</p>
+                    <p>This page is where you can set how the lego rover should react when an obstacle either disappears or appears</p>
+                </div>
+                    Tasks
+                    Settings
+            </div>
+            
+            <div id="cguide" class="contentDiv">
+                <div class="contentTitle">
+                    Using the application
+                </div>
+                <div>
+                    Connecting
+                </div>
+                <div>
+                    Navigation
+                </div>
+                <div>
+                    Rules
+                </div>
+                <div>
+                    Tasks
+                </div>
+                <div>
+                    Settings
+                </div>
+            </div>
+    </body>
+</html>
