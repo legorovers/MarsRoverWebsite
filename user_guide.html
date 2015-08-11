@@ -2,138 +2,248 @@
 <html>
     <head>
         <title>Mars Rover User Guide</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css" type="text/css"/>
-        <script src="events.js" type="text/jscript"></script>
     </head>
     <body>
-        <div id="mainpage">
-            <div id="title">
-                <img id="imguol" src="images/uol.png"/>
-                <img src="images/autonomous.png"/>
-            </div>  
-            <div id="roverBg">
-                <img id="imglogo" src="images/logo.png"/>
-                Lego Mars Rover
-            </div>
+        <div id="title">
+            <img id="imguol" src="images/uol.png" alt="University of Liverpool"/>
+            <img src="images/autonomous.png" alt="Centre for autonomous systems technology" />
+        </div>  
+        <div id="roverBg">
+            <img id="imglogo" src="images/logo.png" alt="Mars Rover Application Logo"/>
+        </div>
+
+        <div id="menu">
+            <a id="cmdHome" class="menuItemNS" href="index.html">
+                Home
+            </a>
+            <a id="cmdLejos" class="menuItemNS" href="install_lejos.html">
+                Install LeJOS
+            </a>
+            <a id="cmdAndroid" class="menuItemNS" href="install_android.html">
+                Install Android
+            </a>
+            <a id="cmdBTGuide" class="menuItemNS" href="pairing.html">
+                Bluetooth Pairing
+            </a>
+            <a id="cmdTGuide" class="menuItemSR" href="user_guide.html">
+                User Guide
+            </a>
         </div>
         
-        <div id="tguide" class="contentDiv">
-                <div class="contentTitle">
-                    Using the Mars Rover Tablet App
-                </div>
-                <div class="guideSection">
-                    <p class="guideTitle">1. Connecting</p>
-                    <p>To connect the android device to the EV3 Robot is a two step process. First you need to pair the android device to the robot, then secondly connecting the Mars Rover app to the EV3 Robot.</p>
-                    <p>Please ensure that WiFi and Mobile Data is switched off.</p>
-                    <dl>
-                        <dt class="guideSubTitle">1.1 Bluetooth Pairing</dt>
-                            <dd>Turn on the EV3 Robot by pressing the center dark grey button. 
-                                <br/>
-                                <img class="guideImg" src="imgTabGuide/graybtn.JPG"/>
-                            </dd>
-                            <dd>Wait for the EV3 Robot to finish starting up, the robot will make a noise when it is finished. (This may take a few moments)</dd>
-                            <dd>On your Android device go to the settings app.</dd>
-                            <dd>Turn on the bluetooth.</dd>
-                            <dd>Touch the name of the robot when it appears, and wait for it to finishing pairing.</dd>
-                            <dd>Touch the gear icon next to the robot name.</dd>
-                            <dd>Touch the internet access box so that it is ticked.</dd>
-                            <dd>The Android Device and the EV3 Robot are now paired.</dd>
-                        <br/>
-                        <dt class="guideSubTitle"> 1.2 Connecting from the Mars Rover App</dt>
-                            <dd>Ensure that the Android device is paired and that WiFi and Mobile Data are switched off.</dd>
-                            <dd>Start the Mars Rover App.</dd>
-                            <dd>Ensure that robot address is correct by looking on the EV3 Display for a number in this format 10.0.1.1.</dd>
-                            <dd>Press the connect button, connection messages are shown below. When connected it will display connected in the messages below.</dd>
-
-                    </dl>
-                </div>
-                <br/>
-                
-                <div class="guideSection">
-                    <p class="guideTitle">2. Navigation</p>
-                    This page is to allow manual control of the EV3 Robot, you can also set the robot speed and the delay of the navigation buttons
-                    <dl>
-                        <dt class="guideSubTitle">2.1 Time Delay</dt>
-                        <dd>This is the amount of time it takes for the robot to receive the command from the navigation button pressed.<br/> There are four settings that can be chosen:<br/><br/>
-                            <dl>
-                                <dt>1. Instant</dt>
-                                    <dd>This is the setting for no delay to take place</dd>
-                                <dt>2. Satellite Phone Call to Austrilia (500ms)</dt>
-                                    <dd>This sets the delay to 500 milliseconds, which is about the same as the delay in a satellite phone call to Austrilia from the UK.</dd>
-                                <dt>3. Radio Signal to the Moon (1.3secs)</dt>
-                                    <dd>This sets the delay to 1.3 seconds, which is how long it takes a radio signal to get to the moon from earth.</dd>
-                                <dt>4. Signal To Mars (3min)</dt>
-                                    <dd>This sets the delay to 3 minutes, which is the minimum amount of time it takes for a signal to reach the actual Mars Rover.</dd>
-                            </dl>
-                        </dd>
-                        <br/>
-                        <dt class="guideSubTitle">2.2 Robot Speed</dt>
-                            <dd>This sets the speed of the robot for when it moves, the speed affects both the navigation buttons and the task demonstrations.<br/> There are five speeds to choose from: <br/><br/>
-                            <dl>
-                                <dt>1. Slow</dt>
-                                <dt>2. Normal</dt>
-                                <dt>3. Fast</dt>
-                                <dt>4. Faster</dt>
-                                <dt>5. Fastest</dt>
-                            </dl>
-                        </dd>
-                        <br/>
-                        
-                        <dt class="guideSubTitle">2.3 Navigation Buttons</dt>    
-                        <dd>There are a number of buttons that enable you to move the robot around. These include:
-                            <dl>
-                                <dt>Double Up Arrow</dt>
-                                    <dd>The robot will move forward until stop is pressed.</dd>
-                                <dt>Up Arrow</dt>
-                                    <dd>The robot will move forward slightly.</dd>
-                                <dt>Double Left Arrow</dt>
-                                    <dd>The robot will turn left until stop is pressed.</dd>
-                                <dt>Left Arrow</dt>
-                                    <dd>The robot will turn about 90° to the left.</dd>
-                                <dt>Stop</dt>
-                                    <dd>Stops the robot moving</dd>
-
-                                <dt>Right Arrow</dt>
-                                    <dd>The robot will turn about 90° to the right.</dd>
-                                <dt>Double Right Arrow</dt>
-                                    <dd>The robot will turn right until the stop button is pressed.</dd>
-                                <dt>Down Arrow</dt>
-                                    <dd>The robot will reverse slightly</dd>
-                                <dt>Double Down Arrow</dt>
-                                    <dd>The robot will reverse until the stop button is pressed.</dd>
-                            </dl>
-                        </dd>
-                    </dl>
-                </div>
-                <br/>
-                
-                <div class="guideSection">
-                    <p class="guideTitle">3. Rules</p>
-                    <p>This page is where you can set how the lego rover should react when an obstacle either disappears or appears</p>
-                </div>
-                    Tasks
-                    Settings
+        <div id="tguide" class="contentdiv">
+            <div class="contentTitle">
+                Using the Mars Rover App
+            </div>
+            <div class="contentblock">
+                This section is here to guide you through how to use the android app and the Java application. <br/>
+                Contents:
+                <ol>
+                    <li><a href="#connect">Connecting</a></li>
+                    <li><a href="#belief">Robot Beliefs</a></li>
+                    <li><a href="#nav">Navigation</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ol>
+                On the Android application you can choose a menu by touching the top left menu icon and then choosing a page on the left.
             </div>
             
-            <div id="cguide" class="contentDiv">
-                <div class="contentTitle">
-                    Using the application
-                </div>
-                <div>
-                    Connecting
-                </div>
-                <div>
-                    Navigation
-                </div>
-                <div>
-                    Rules
-                </div>
-                <div>
-                    Tasks
-                </div>
-                <div>
-                    Settings
-                </div>
+            <div class="contentblock">
+                <a id="connect">1. Connecting</a>
+                <br/>
+                <br/>
+                To connect to the EV3 robot you first need to pair the robot with your device. For the guide on how to pair the EV3 robot see the bluetooth pairing section. 
+                <br/>
+                <br/>
+                Once the EV3 robot and the device has been paired, you can connect the application to the EV3 robot.
+                <br/>
+                To connect first make sure that the robot address is correct by checking the address on the robot display with the address on the application.
+                <br/>
+                <br/>
+                When the address is correct click the connect button, when the connection has been made connected will be shown.
+                <br/>
+                <br/>
+                <a href="#top">Top of page</a>
             </div>
+            
+            <div class="contentblock">
+                <a id="connect">2. Connecting</a>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <a href="top">Top of page</a>
+            </div>
+            
+            <div class="contentblock">
+                <a id="nav">3. Navigation</a>
+                <br/>
+                <br/>
+                This section is to show how to control the EV3 Robot and set the robot speed and the delay of the navigation buttons.
+                <br/>
+                <br/>
+                Time Delay
+                <br/>
+                This is the amount of time it takes for the robot to receive the command from the navigation button pressed.<br/> There are four settings that can be chosen:
+                <br/>
+                <dl>
+                    <dt>1. Instant</dt>
+                        <dd>This is the setting for no delay to take place</dd>
+                    <dt>2. Satellite Phone Call to Austrilia (500ms)</dt>
+                        <dd>This sets the delay to 500 milliseconds, which is about the same as the delay in a satellite phone call to Austrilia from the UK.</dd>
+                    <dt>3. Radio Signal to the Moon (1.3secs)</dt>
+                        <dd>This sets the delay to 1.3 seconds, which is how long it takes a radio signal to get to the moon from earth.</dd>
+                    <dt>4. Signal To Mars (3min)</dt>
+                    <dd>This sets the delay to 3 minutes, which is the minimum amount of time it takes for a signal to reach the actual Mars Rover.</dd>
+                </dl>
+                
+                Robot Speed
+                <br/>
+                This sets the speed of the robot for when it moves, the speed affects both the navigation buttons and the task demonstrations.<br/> There are five speeds to choose from: 
+                <br/>
+                <dl>
+                    <dt>1. Slow</dt>
+                    <dt>2. Normal</dt>
+                    <dt>3. Fast</dt>
+                    <dt>4. Faster</dt>
+                    <dt>5. Fastest</dt>
+                </dl>
+                
+                Navigation Buttons
+                <br/>
+                There are a number of buttons that enable you to move the robot around. These include:
+                <dl>
+                    <dt>Double Up Arrow</dt>
+                        <dd>The robot will move forward until stop is pressed.</dd>
+                    <dt>Up Arrow</dt>
+                        <dd>The robot will move forward slightly.</dd>
+                    <dt>Double Left Arrow</dt>
+                        <dd>The robot will turn left until stop is pressed.</dd>
+                    <dt>Left Arrow</dt>
+                        <dd>The robot will turn about 90° to the left.</dd>
+                    <dt>Stop</dt>
+                        <dd>Stops the robot moving</dd>
+
+                    <dt>Right Arrow</dt>
+                        <dd>The robot will turn about 90° to the right.</dd>
+                    <dt>Double Right Arrow</dt>
+                        <dd>The robot will turn right until the stop button is pressed.</dd>
+                    <dt>Down Arrow</dt>
+                        <dd>The robot will reverse slightly</dd>
+                    <dt>Double Down Arrow</dt>
+                        <dd>The robot will reverse until the stop button is pressed.</dd>
+                </dl>
+                <a href="#top">Top of page</a>
+            </div>
+            
+            <div class="contentblock">
+                <a id="nav">4. Rules</a>
+                <br/>
+                <br/>
+                This section shows how to set up rules for the EV3 robot so that it can react when the beliefs of the robot changed.
+                <br/>
+                <br>
+                There are four rules that can be set for the EV3 robot. 
+                <br/>
+                You can select rules by choosing from the dropdown on Android or click the rule number in the JAVA application.
+                <br/>
+                <br/>
+                To enable or disable a rule check the tickbox for that rule.
+                <br/>
+                <br/>
+                The first option is to choose what belief the robot should react to, the choices are:
+                <dl>
+                    <dt>Obstacle</dt>
+                    <dd>The robot will react when an obstacle is in front of it.</dd>
+                    <dt>Water</dt>
+                    <dd>The robot will react when a blue colour is under the colour sensor.</dd>
+                    
+                    <dt>Path</dt>
+                    <dd>The robot will react when a dark colour is under the colour sensor.</dd>
+                </dl>
+                The next option is too choose when to react the chosen belief, the choices are:
+                <dl>
+                    <dt>Appeared</dt>
+                    <dd>The robot will react when the belief becomes true.</dd>
+                    <dt>Disappeared</dt>
+                    <dd>The robot will react when the belief is no longer true.</dd>
+                </dl>
+                The next three options are how the robot should react, the actions will be carried out from top to bottom. The choices of the actions are:
+                <dl>
+                    <dt>Nothing</dt>
+                    <dd>The robot will take no action.</dd>
+                    <dt>Forward</dt>
+                    <dd>The robot will move forward until stop is pressed.</dd>
+                    <dt>Forward a bit</dt>
+                    <dd>The robot will move forward a short distance.</dd>
+                    <dt>Backwards</dt>
+                    <dd>The robot will reverse until stop is pressed.</dd>
+                    <dt>Backwards a bit</dt>
+                    <dd>The robot will reverse a short distance.</dd>
+                    <dt>Left</dt>
+                    <dd>The robot will turn left until stop is pressed.</dd>
+                    <dt>Left 90°</dt>
+                    <dd>The robot will turn left about 90°.</dd>
+                    <dt>Right</dt>
+                    <dd>The robot will turn right until stop is pressed.</dd>
+                    <dt>Right 90°</dt>
+                    <dd>The robot will turn right about 90°.</dd>
+                    <dt>Stop</dt>
+                    <dd>The robot will stop moving.</dd>
+                </dl>
+                <a href="#top">Top of page</a>
+            </div>
+            
+            <div class="contentblock">
+                <a id="nav">5. Tasks</a>
+                <br/>
+                <br/>
+                This section explains how the task demonstrations work.
+                <br/>
+                First select a demonstration, the choices are:
+                <dl>
+                    <dt>Follow Line</dt>
+                    <dd>This task shows how the robot can be made to follow the edge of a line, using a basic algorithm of turning left if there is a path belief and turning right is there is no path belief.</dd>
+                    <dt>Avoid Obstacle</dt>
+                    <dd>
+                        This tasks show how the robot can avoid obstacles, again using a basic algorithm of if there is a belief of an obstacle then turn, otherwise keep going forward.
+                    </dd>
+                    <dt>Find Water</dt>
+                    <dd>This slightly more complex example shows how when given a goal of "find water", the robot can find it by choosing what to do based on it's beliefs. 
+                    <br/>
+                    When there is no water or path the robot will move randomly. The robot will avoid obstacles by turning randomly. When a path is believed to be found then the robot will follow the path to the water
+                    <br/>
+                    When the robot finds the water, either by following the line or randomly found when moving it will stop.</dd>
+                </dl>
+                To start a task demonstration click the start button, and when you want to stop the demonstration click the stop button. Note that when the task demonstration is running you will be unable to use the manual navigation buttons.
+                <br/>
+                <br/>
+                <a href="#top">Top of page</a>
+            </div>
+            
+            <div class="contentblock">
+                <a id="nav">6. Settings</a>
+                <br/>
+                <br/>
+                This section explains the settings that can be changed.
+                <br/>
+                These are:
+                <dl>
+                    <dt>Obstacle Distance</dt>
+                    <dd>This is the distance at which the robot will believe that there is an obstacle in front of it. The default is 0.4.</dd>
+                    <dt>Path Maximum</dt>
+                    <dd>This is the maximum value which a path can be detected. Paths are detected when all three numbers from the colour sensor range from 0 to the number given.</dd>
+                    <dt>Water Maximum</dt>
+                    <dd>This is the maximum value at which water is believed to be detected. Water is detected when all three numbers from the colour sensor are in the range of "Path Maximum" to the number given and the blue component of the colour is higher than green, which in turn is higher than red.</dd>
+                </dl>
+                
+                Once you have made the changes to the settings click set, and the settings for the robot will be updated.
+                <br/>
+                <br/>
+                <a href="#top">Top of page</a>
+            </div>
+        </div>        
     </body>
 </html>

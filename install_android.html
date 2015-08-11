@@ -2,31 +2,94 @@
 <html>
     <head>
         <title>Mars Rover User Guide</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css" type="text/css"/>
-        <script src="events.js" type="text/jscript"></script>
     </head>
     <body>
-        <div id="mainpage">
-            <div id="title">
-                <img id="imguol" src="images/uol.png"/>
-                <img src="images/autonomous.png"/>
-            </div>  
-            <div id="roverBg">
-                <img id="imglogo" src="images/logo.png"/>
-                Lego Mars Rover
-            </div>
+        <a id="top"></a>
+        <div id="title">
+            <img id="imguol" src="images/uol.png" alt="University of Liverpool"/>
+            <img src="images/autonomous.png" alt="Centre for autonomous systems technology" />
+        </div>  
+        <div id="roverBg">
+            <img id="imglogo" src="images/logo.png" alt="Mars Rover Application Logo"/>
+        </div>
+
+        <div id="menu">
+            <a id="cmdHome" class="menuItemNS" href="index.html">
+                Home
+            </a>
+            <a id="cmdLejos" class="menuItemNS" href="install_lejos.html">
+                Install LeJOS
+            </a>
+            <a id="cmdAndroid" class="menuItemS" href="install_android.html">
+                Install Android
+            </a>
+            <a id="cmdBTGuide" class="menuItemNS" href="pairing.html">
+                Bluetooth Pairing
+            </a>
+            <a id="cmdTGuide" class="menuItemNSR" href="user_guide.html">
+                User Guide
+            </a>
         </div>
         
-         <div id="android" class="contentDiv">
-                <div class="contentTitle">
-                    Android, type of android
-                </div>
-                <div>
-                    enabled install from unknown sources
-                </div>
-                <div>
-                    click this link from your tablet
-                </div>
+         <div id="android" class="contentdiv">
+            <div class="contentTitle">
+                Installing Mars Rover App on Android
             </div>
+            <div class="contentblock">
+                This page is to guide you through how to install the Mars Rover Android application.
+                <br/>
+                <ol>
+                    <li><a href="#requirements">Android Requirements</a></li>
+                    <li><a href="#prerequisites">Before Installing</a></li>
+                    <li><a href="#install">Installing</a></li>
+                </ol>
+            </div>
+
+            <div class="contentblock">
+                <a id="requirements">1. Android Requirements</a>
+                <br/>
+                <br/>
+                To install the Android application your Android device must be Android 4.4 (KitKat) or higher and have a screen size of at least 7". You can find your Android version by going to Settings.
+                <img src="imgAndroidInstall/settings.png" class="contentImg" alt="Screenshot of settings app in android"/>
+                Then choosing about.
+                <img src="imgAndroidInstall/about.png" class="contentImg" alt="Screenshot of about option in android settings"/> Your Android Version is shown underneth Android version in the list.
+                <img src="imgAndroidInstall/version.png" class="contentImg" alt="Screenshot of android version shown in the settings app in android"/>
+                <a href="#top">Top of page</a>
+            </div>
+             
+            <div class="contentblock">
+                <a id="prerequisites">2. Before Installing</a>
+                <br/>
+                <br/>
+                Before you can install the application you first need to allow your Android Device to install applications from unknown sources. This is because at time of writing the application is not availiable from  the play store.
+                <br/>
+                To do this first go into settings.
+                <img src="imgAndroidInstall/settings.png" class="contentImg" alt="Screenshot of settings app in android"/>
+                Then choose security.
+                <img src="imgAndroidInstall/security.png" class="contentImg" alt="Screenshot of security option in android settings"/>
+                Check the unknown sources and choose OK on the information that appears.
+                <img src="imgAndroidInstall/sources.png" class="contentImg" alt="Screenshot of unknown sources option in the settings app in android"/>
+                <img src="imgAndroidInstall/warning.png" class="contentImg" alt="Screenshot of the unknown sources warning in android"/>
+                You can now install the Android application.
+                <br/>
+                <br/>
+                <a href="#top">Top of page</a>
+            </div>
+
+            <div class="contentblock">
+                <a id="install">3. Installing</a>
+                <br/>
+                <br/>
+                To install the Mars Rover application you will need to navigate to this webpage on your device.
+                <br/>
+                <br/>
+                Click this <a href="mars-rover.apk">link</a> from your Android device to install the application.
+                <br/>
+                <br/>
+                <a href="#top">Top of page</a>
+            </div>
+        </div>   
     </body>
 </html>

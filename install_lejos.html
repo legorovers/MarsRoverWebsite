@@ -2,55 +2,96 @@
 <html>
     <head>
         <title>Mars Rover User Guide</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css" type="text/css"/>
-        <script src="events.js" type="text/jscript"></script>
     </head>
     <body>
-        <div id="mainpage">
-            <div id="title">
-                <img id="imguol" src="images/uol.png"/>
-                <img src="images/autonomous.png"/>
-            </div>  
-            <div id="roverBg">
-                <img id="imglogo" src="images/logo.png"/>
-                Lego Mars Rover
-            </div>
+        <a id="top"></a>
+        <div id="title">
+            <img id="imguol" src="images/uol.png" alt="University of Liverpool"/>
+            <img src="images/autonomous.png" alt="Centre for autonomous systems technology" />
+        </div>  
+        <div id="roverBg">
+            <img id="imglogo" src="images/logo.png" alt="Mars Rover Application Logo"/>
+        </div>
+
+        <div id="menu">
+            <a id="cmdHome" class="menuItemNS" href="index.html">
+                Home
+            </a>
+            <a id="cmdLejos" class="menuItemS" href="install_lejos.html">
+                Install LeJOS
+            </a>
+            <a id="cmdAndroid" class="menuItemNS" href="install_android.html">
+                Install Android
+            </a>
+            <a id="cmdBTGuide" class="menuItemNS" href="pairing.html">
+                Bluetooth Pairing
+            </a>
+            <a id="cmdTGuide" class="menuItemNSR" href="user_guide.html">
+                User Guide
+            </a>
         </div>
         
-        <div id="lejos" class="contentDiv">
-                <div class="contentTitle">
-                    LeJOS is the system that we use on the lego EV3 robots, to use our program your EV3 will need LeJOS.
-                </div>
-                <div>
-                    Pre-requisites
-                </div>
-                <div>
-                    1. EV3 Robot <br/>
-                    2. One MicroSD card between 2GB and 32GB formatted in FAT32<br/>
-                    3. JAVA SDK (Not JRE) Download Here
-                </div>
-                <div>
-                    Installing on windows
-                </div>
-                <div>
-                    1. Download the LeJOS installer from here <br/>
-                    2. Click next <br/>
-                    3. Select the JDK Directory <br/>
-                    4. Click next <br/>
-                    5. Click Install <br/>
-                    6. Make sure that the "Launch EV3SDCard utility" is ticked
-                    7. Click Finish
-                    8. 
-                </div>
-                <div>
-                    Windows Install, Wizard, sdCard utility
-                </div>
-                <div>
-                    Mac/Linux, unpack tar.gz, write sd500.img using disk image writing utility
-                </div>
-                <div>
-                    finished
-                </div>
+        <div id="lejos" class="contentdiv">
+            <div class="contentTitle">
+                Installing LeJOS on an EV3 lego robot
             </div>
+            <div class="contentblock">
+                This page is guide you through how to get the LeJOS system on the EV3 robot, so that you can use the Mars Rover applications.
+                <br/>
+                <ol>
+                    <li><a href="#needs">What You Need</a></li>
+                    <li><a href="#format">Formatting the SDCard</a></li>
+                    <li><a href="#copy">Copying the Files</a></li>
+                    <li><a href="#run">Running LeJOS</a></li>
+                </ol>
+            </div>
+            
+            <div class="contentblock">
+                <a id="needs">1. What You Need</a>
+                <br/>
+                <br/>
+                To run LeJOS on your robot you will need the following items:
+                <ul>
+                    <li>A micro SDCard which is a least 2GB and at most 32GB</li>
+                    <li>The zip file located here</li>
+                </ul>
+                The micro SDCard must be FAT32 formatted. To see how to format the micro SDCard correctly see the formatting the SDCard section for your computer.
+                <br/>
+                <br/>
+                <a href="top">Top of Page</a>
+            </div>
+            
+            <div class="contentblock">
+                <a id="format">2 Formatting the SDCard</a>
+                <br/>
+                <br/>
+                First download and install the sdcard formatter program from here.
+                <br/>
+                Select your sdcard from the dropdown menu.
+                <br/>
+                Choose overwrite format.
+                <br/>
+            </div>
+            
+            <div class="contentblock">
+                <a id="copy">3. Copying the Files</a>
+                <br/>
+                <br/>
+                First unzip the file you downloaded from the What You Need section. 
+                Then copy the files to the newly formatted SDCard.
+                <br/>
+                <br/>
+                <a href="top">Top of Page</a>
+            </div>
+            
+            <div class="contentblock">
+                <a id="run">4. Running LeJOS</a>
+                <br/>
+                <br/>
+                Eject your micro SDCard from your computer and place it in the EV3 robot. Turn the robot on and LeJOS will now be running.
+            </div>
+        </div>
     </body>
 </html>
