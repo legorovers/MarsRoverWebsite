@@ -14,29 +14,12 @@ a
     color: black;
 }
 
-#imglogo
-{
-    max-width: 100px;
-    width: 100px;
-}
-
-#imguol
-{
-    max-height: 60px;
-    height: 60px;
-}
-
-#uol
-{
-    line-height: 100px;
-    vertical-align: middle;
-}
 
 #title
 {
     text-align: center;
     background-color: white;
-    min-width: 400px;
+    padding-top: 5px;
 }
 
 #menu
@@ -45,13 +28,6 @@ a
     background: #21b4e2;
     font-size: 0;
     border-bottom: 1px #21b4e2 outset;
-}
-
-#roverBg
-{
-    background: linear-gradient(#E60000, #A10000);
-    height: 100px;
-    text-align: center;
 }
 
 .menuItemS
@@ -101,7 +77,7 @@ a
     width: 24%;  
     max-width: 150px;
     text-align: center;
-    line-height: 100px;
+    line-height: 40px;
     height: 40px;
     background: linear-gradient(#21b4e2, #1e5799);
     border-left: 1px #21b4e2 inset;
@@ -114,7 +90,6 @@ a
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 600px;
     background-color: white;
     border-left: 1px black outset;
     border-right: 1px black outset;
@@ -126,7 +101,7 @@ a
 {
     text-align: center;
     font-size: 20px;
-    height: 50px;
+    min-height: 50px;
     line-height: 50px;
 }
 
@@ -139,7 +114,5 @@ a
 
 .contentImg
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
+    width: 49%;  
 }
