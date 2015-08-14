@@ -6,7 +6,7 @@ body
     margin: 0 !important;
     padding: 0 !important;
     text-align: center;
-    min-width: 550px;
+    min-width: 660px;
 }
 
 a
@@ -34,7 +34,7 @@ a
 {
     font-size: 16px;
     display: inline-block;
-    width: 24%;  
+    width: 19%;  
     max-width: 150px;
     text-align: center;
     line-height: 40px;
@@ -47,7 +47,7 @@ a
 {
     font-size: 16px;
     display: inline-block;
-    width: 24%;  
+    width: 19%;  
     max-width: 150px;
     text-align: center;
     line-height: 40px;
@@ -61,7 +61,7 @@ a
 {
     font-size: 16px;
     display: inline-block;
-    width: 24%;  
+    width: 19%;  
     max-width: 150px;
     text-align: center;
     line-height: 40px;
@@ -74,7 +74,7 @@ a
 {
     font-size: 16px;
     display: inline-block;
-    width: 24%;  
+    width: 19%;  
     max-width: 150px;
     text-align: center;
     line-height: 40px;
@@ -114,5 +114,8 @@ a
 
 .contentImg
 {
-    width: 49%;  
+    max-width: 49%; 
+    max-height: 400px;
+    border: 1px solid black;
+    
 }
